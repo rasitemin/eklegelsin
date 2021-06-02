@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Ekle Getir
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
+    <style>
+        #rcorners1 {
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+        ul {
+            list-style-image: url('sgpurple.gif');
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* style the header */
+        .headera {
+            background-color: #e68910;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(236, 185, 16);
+            border-radius: 10px;
+
+
+
+        }
+
+        /* style the topnav links*/
+        .topnav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        /*change color on hover*/
+        .topnav a:hover {
+            background-color: rgb(194, 240, 30);
+            color: rgb(150, 136, 73);
+        }
+
+        .active {
+            background-color: black;
+            color: white !important;
+        }
+
+        .dropbtn {
+            background-color: #eeff00;
+            color: white;
+            padding: 10px;
+            font-size: 32px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 11px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #afa61e;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #d0ff00;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px 50px 30px 5px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <p>Elliptical border - border-radius: 50px / 15px:</p>
+<p id="rcorners1"></p>
+
+
+    <div class="headera">
+        <h1 class="font-effect-fire">
+            Ekle Gelsin
+        </h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Ürünlerim</a>
+        <a href="#">Hakkımda</a>
+        <a class="active" href="#">İletişim</a>
+        <a href="#">Tarihçe</a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">buton</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="assets/download.jpg">
+            <img src="assets/download.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">SÜT L/7.49 TL</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/ekıcıpeynır.jpg">
+            <img src="assets/ekıcıpeynır.jpg" alt="Forest" width="500" height="200">
+        </a>
+        <div class="desc">BEYAZ PEYNİR Kg/17.90</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/yogurt.jpg">
+            <img src="assets/yogurt.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">YOĞURT Kg/7.80</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="assets/images.jpg">
+            <img src="assets/images.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">ÇAY Kg/27.90</div>
+    </div>
+    
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">İSİM</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">SOYİSİM</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">ÜLKE</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+
+</html>
